@@ -1,34 +1,37 @@
 <!doctype html>
 <html>
-
 <head>
-	<title>GAME</title>
-	<link rel="stylesheet"  href="css/style.css">
+	<title>GOOGLE FORM</title>
+	<link rel="stylesheet" href="css/style.css">
 	<script src="index.js"></script>
 </head>
 <body>
-	<div class="background">
-		
-		<div class="title"> 
-			<h1>T T T GAME</h1>
-		</div>
-		<div class="display">YOURS<span class="game player">X</span> turns
-		</div>
-		<div class="container">
-			<div class="box"></div>
-			<div class="box"></div>
-			<div class="box"></div>
-			<div class="box"></div>
-			<div class="box"></div>
-			<div class="box"></div>
-			<div class="box"></div>
-			<div class="box"></div>
-		</div>
-		<div class="display answer hide"></div>
-		<div class="conterols">
-			<button id="reset">RESET</button>
-		</div>
+	<div class="container">
+		<form autocomplete="off" method="POST" name="google-sheet">
+			<h3><center>DETAILS FORM</center></h3>
+			<input type="text" placeholder="Enter The Name">
+			<input type="email" placeholder="Enter Your Email">
+			<input type="text" placeholder="Enter Your Contact">
+			<input type="text" placeholder="Select Your Class">
+			
+			<select name="degree">
+				<option value="not sesected">Select a Options</option>
+				<option value="BCA">BCA</option>
+				<option value="MCA">MCA</option>
+				<option value="Bsc.cs">BSC.cs</option>
+				<option value="BE">BE</option>
+				<option value="B.tech">B.Tech</option>
+			</select>
+			
+			<textarea row="4" placeholder="how we can help you  ??" name="message"></textarea>
+			<label><b>Gender</b></label><br>
+			Male<input type="radio" name="gender">
+			Female<input type="radio" name="gender">
+			
+			<button type="submit" name="submit">Send</button>
+			<button type="reset" class="reset">Reset</button>
 	</div>
 </body>
+	
 </html>
 			
